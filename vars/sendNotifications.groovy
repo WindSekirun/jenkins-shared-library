@@ -26,7 +26,7 @@ def call(String buildStatus = 'STARTED') {
   
   // Telegram message
   // send PyxisGroup (-369756639) to message
-  def targetUserId = -369756639"
+  def targetUserId = "-369756639"
   def botToken = "674287229:AAFF9Pc0kUrZsL1p3-nIBKB7FGmHeIobNr0"
   def message = java.net.URLEncoder.encode(details, "utf-8")
   println new URL("https://api.telegram.org/bot$botToken/sendMessage?chat_id=$targetUserId&text=$message").getText()
